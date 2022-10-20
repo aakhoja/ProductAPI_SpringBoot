@@ -31,5 +31,13 @@ public class ProductService {
             throw new IllegalStateException("SKU is already present.");
         productRepository.save(product);
     }
+
+    public void deleteProduct(Long productID) {
+        if(productRepository.existsById(productID))
+            productRepository.deleteById(productID);
+        else
+            throw new IllegalStateException("Product with ID :" + productID + " does not exist");
+
+    }
 }
 
