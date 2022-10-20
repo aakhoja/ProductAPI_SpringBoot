@@ -39,5 +39,11 @@ public class ProductService {
             throw new IllegalStateException("Product with ID :" + productID + " does not exist");
 
     }
+
+    public void updateProduct(Long productId, String productName, String productSku) {
+        if(productRepository.existsById(productId)){
+
+        }
+    }
 }
 

@@ -12,4 +12,5 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
 
     @Query("SELECT s FROM Product s WHERE s.sku =?1")
     Optional<Product> findProductBySku(String sku);
+
 }
