@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -23,6 +24,11 @@ public class ProductService {
     }
 
     public void addNewProduct(Product product){
+
+        Optional<Product> productSku = productRepository.findProductBySku(product.getSku());
+
+        if(productSku.isPresent())
+            throw new IllegalStateException("SKU is already present.");
         productRepository.save(product);
     }
 }
