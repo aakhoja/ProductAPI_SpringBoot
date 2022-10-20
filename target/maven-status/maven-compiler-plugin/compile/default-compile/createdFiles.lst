@@ -1,0 +1,6 @@
+com/example/demo/DemoApplication.class
+com/example/demo/product/Product.class
+com/example/demo/product/ProductConfig.class
+com/example/demo/product/ProductController.class
+com/example/demo/product/ProductService.class
+com/example/demo/product/ProductRepository.class
