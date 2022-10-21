@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -40,7 +41,7 @@ public class ProductService {
             throw new IllegalStateException("Product with ID :" + productID + " does not exist");
 
     }
-
+    @Transactional
     public void updateProduct(Long productId, String name, String sku) {
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new IllegalStateException("Product with ID : " + productId +" does not exist."));
@@ -52,7 +53,7 @@ public class ProductService {
         }
 
         if(sku != null &&
-                name.length() > 0 &&
+                sku.length() > 0 &&
                 !Objects.equals(product.getSku(),sku)){
             product.setSku(sku);
         }
