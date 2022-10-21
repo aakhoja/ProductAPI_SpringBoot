@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 
@@ -40,9 +41,20 @@ public class ProductService {
 
     }
 
-    public void updateProduct(Long productId, String productName, String productSku) {
-        if(productRepository.existsById(productId)){
+    public void updateProduct(Long productId, String name, String sku) {
+        Product product = productRepository.findById(productId)
+                .orElseThrow(() -> new IllegalStateException("Product with ID : " + productId +" does not exist."));
 
+        if(name != null &&
+                name.length() > 0 &&
+                !Objects.equals(product.getProductName(),name)) {
+            product.setProductName(name);
+        }
+
+        if(sku != null &&
+                name.length() > 0 &&
+                !Objects.equals(product.getSku(),sku)){
+            product.setSku(sku);
         }
     }
 }
