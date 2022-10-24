@@ -2,7 +2,7 @@ import './App.css';
 import AppBar from './components/AppBar'
 function App() {
   return (
-    <div className="App">
+    <div className="AppBar">
       <AppBar/>
     </div>
   );
