@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b0cd3c-edf6-44a1-86ea-d3ff4ab7eb77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/productlist/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
