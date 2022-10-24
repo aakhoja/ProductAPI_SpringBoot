@@ -1,9 +1,9 @@
 import './App.css';
-
+import AppBar from './components/AppBar'
 function App() {
   return (
     <div className="App">
-      Khoja Distributions | Coming Soon
+      <AppBar/>
     </div>
   );
 }
