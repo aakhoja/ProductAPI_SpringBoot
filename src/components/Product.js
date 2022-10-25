@@ -15,7 +15,16 @@ export default function Product() {
         e.preventDefault()
         const product = {pName,pSku,pQuantity}
         console.log(product)
-    }
+
+        fetch("https://localhost:8080/api/v1/product",{
+            method:"POST",
+            headers:{"Content-Type":"application/json" },
+            body:JSON.stringify(product)}
+            
+        ).then(() => {
+            console.log("New product has been added")
+        })
+    } 
 
   return (
 
