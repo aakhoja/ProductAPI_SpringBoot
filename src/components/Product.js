@@ -2,12 +2,20 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Container , Paper} from '@mui/material';
+import Button from '@mui/material/Button';
+import { useEffect, useState } from "react";
 
 export default function Product() {
-    const titleBackground = {padding:'50px 20px', width:600,margin:'20px auto'}
+    const titleBackground = {padding:'50px 20px', width:800,margin:'20px auto'}
     const[pName,setPName] = useState('');
     const[pSku, setSku] = useState('');
     const[pQuantity,setQuantity] = useState('');
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        const product = {pName,pSku,pQuantity}
+        console.log(product)
+    }
 
   return (
 
@@ -32,6 +40,7 @@ export default function Product() {
       value={pSku}
       onChange={(e) => setSku(e.target.value)} />
     </Box>
+    <Button variant="outlined" onClick={handleClick}>Add Product </Button>
     </Paper>
     </Container>
   );
