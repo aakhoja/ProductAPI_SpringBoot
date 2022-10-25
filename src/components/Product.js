@@ -5,6 +5,10 @@ import { Container , Paper} from '@mui/material';
 
 export default function Product() {
     const titleBackground = {padding:'50px 20px', width:600,margin:'20px auto'}
+    const[pName,setPName] = useState('');
+    const[pSku, setSku] = useState('');
+    const[pQuantity,setQuantity] = useState('');
+
   return (
 
     <Container>
@@ -18,9 +22,15 @@ export default function Product() {
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label="ProductName" variant="outlined" />
-      <TextField id="filled-basic" label="ProductQuantity" variant="filled" />
-      <TextField id="standard-basic" label="ProductSKU" variant="standard" />
+      <TextField id="outlined-basic" label="ProductName" variant="outlined"
+      value={pName} 
+      onChange={(e) => setPName(e.target.value)} />
+      <TextField id="filled-basic" label="ProductQuantity" variant="filled"
+      value={pQuantity}
+      onChange={(e) => setQuantity(e.target.value)} />
+      <TextField id="standard-basic" label="ProductSKU" variant="standard"
+      value={pSku}
+      onChange={(e) => setSku(e.target.value)} />
     </Box>
     </Paper>
     </Container>
