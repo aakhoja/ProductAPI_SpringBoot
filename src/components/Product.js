@@ -9,6 +9,7 @@ export default function Product() {
 
     <Container>
         <Paper elevation={3} style={titleBackground}>
+            <h1 style={titleBackground}> Add a Product </h1>
     <Box
       component="form"
       sx={{
