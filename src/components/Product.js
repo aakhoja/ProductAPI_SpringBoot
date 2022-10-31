@@ -29,26 +29,26 @@ export default function Product() {
   return (
 
     <Container>
-        <Paper elevation={3} style={titleBackground}>
+    <Paper elevation={3} style={titleBackground}>
             <h1 style={titleBackground}> Add a Product </h1>
-    <Box
-      component="form"
-      sx={{
-        '& > :not(style)': { m: 1, width: '25ch' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <TextField id="outlined-basic" label="ProductName" variant="outlined"
-      value={pName} 
-      onChange={(e) => setPName(e.target.value)} />
-      <TextField id="filled-basic" label="ProductQuantity" variant="filled"
-      value={pQuantity}
-      onChange={(e) => setQuantity(e.target.value)} />
-      <TextField id="standard-basic" label="ProductSKU" variant="standard"
-      value={pSku}
-      onChange={(e) => setSku(e.target.value)} />
-    </Box>
+        <Box
+          component="form"
+          sx={{
+            '& > :not(style)': { m: 1, width: '25ch' },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+              <TextField id="outlined-basic" label="ProductName" variant="outlined"
+              value={pName}
+              onChange={(e) => setPName(e.target.value)} />
+              <TextField id="filled-basic" label="ProductQuantity" variant="filled"
+              value={pQuantity}
+              onChange={(e) => setQuantity(e.target.value)} />
+              <TextField id="standard-basic" label="ProductSKU" variant="standard"
+              value={pSku}
+              onChange={(e) => setSku(e.target.value)} />
+        </Box>
     <Button variant="outlined" onClick={handleClick}>Add Product </Button>
     </Paper>
     </Container>

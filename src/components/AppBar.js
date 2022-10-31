@@ -22,7 +22,7 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography align='center' variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Khoja Distribrituions
+            Khoja Distributions
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
