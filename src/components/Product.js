@@ -11,13 +11,14 @@ export default function Product() {
     const[pName,setPName] = useState('');
     const[pSku, setSku] = useState('');
     const[pQuantity,setQuantity] = useState('');
+    const[pPrice,setPrice] = useState('');
 
     const handleClick = (e) => {
         e.preventDefault()
-        const product = {pName,pSku,pQuantity}
+        const product = {pName,pSku,pQuantity,pPrice}
         console.log(product)
 
-        fetch("https://localhost:8080/api/v1/product",{
+        fetch("http://localhost:8080/api/v1/product",{
             method:"POST",
             headers:{"Content-Type":"application/json" },
             body:JSON.stringify(product)}
@@ -50,6 +51,9 @@ export default function Product() {
               <TextField id="standard-basic" label="ProductSKU" variant="standard"
               value={pSku}
               onChange={(e) => setSku(e.target.value)} />
+              <TextField id="standard-basic" label="ProductPrice" variant="standard"
+                            value={pPrice}
+                            onChange={(e) => setPrice(e.target.value)} />
         </Box>
     <Button variant="outlined" onClick={handleClick}>Add Product </Button>
     </Paper>
